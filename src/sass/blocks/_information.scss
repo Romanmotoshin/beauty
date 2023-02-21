@@ -1,0 +1,65 @@
+.information {
+    margin-top: 20px;
+    &__info {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        margin-left: 20px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+        color: $main-color;
+    }
+    &__main-menu {
+        margin: 0 auto;
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 675px;
+    }
+    &__link {
+        color: #000000;
+        font-size: 16px;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.telephone {
+    display: flex;
+    align-items: center;
+    &__button {
+        color: #000000;
+        width: 170px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 2px solid $main-color;
+        border-radius: 40px;
+        &:hover {
+            border: 2px solid #FFFFFF;
+            background: $main-color;
+            color: #FFFFFF;
+        }
+    }
+    &__number {
+        margin-right: 40px;
+        font-size: 16px;
+        color: #000000;
+    }
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid #EFEFEF;
+}
+

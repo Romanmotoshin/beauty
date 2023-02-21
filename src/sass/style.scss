@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    font-weight: 400;
+    color: #000000;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+    &_white {
+        color: #000000;
+        background: #FFFFFF;
+        border: 2px solid $main-color;
+    }
+    &_green {
+        color: #FFFFFF;
+        background: $main-color;
+        border: 2px solid #FFFFFF;
+        &:hover {
+            background: #FFFFFF;
+            border: 2px solid $main-color;
+            color: #000000;
+        }
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/information';
+@import 'blocks/sale';
+@import 'blocks/special';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+
+@import 'blocks/media';

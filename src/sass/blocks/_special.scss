@@ -1,0 +1,100 @@
+.special {
+    padding: 80px 0 132px 0;
+    background-color: #EFEFEF;
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        color: #000000;
+    }
+    &__car-img {
+        position: absolute;
+        top: -77px;
+        right: 45px;
+    }
+    &__items {
+        position: relative;
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        padding: 25px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__descr {
+        margin-top: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #333333;
+    }
+    &__price {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 21px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    &__btn {
+        margin-top: 20px;
+        width: 130px;
+        height: 35px;
+        border-radius: 30px;
+        letter-spacing: 0.05em;
+    }
+    &__cards {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        position: relative;
+        padding: 35px 40px;
+        background-color: $main-color;
+        width: 540px;
+        min-height: 212px;
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+        &-descr {
+            width: 300px;
+            margin-top: 25px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
+    &__input {
+        margin-top: 25px;
+        width: 225px;
+        height: 35px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        border: none;
+        padding: 9px 25px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__envelope {
+        position: absolute;
+        top: 36px;
+        right: 45px;
+    }
+    &__btn-map {
+        margin-top: 25px;
+        width: 170px;
+        height: 35px;
+        border-radius: 30px;
+    }
+}

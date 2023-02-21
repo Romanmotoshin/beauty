@@ -1,0 +1,23 @@
+.sale {
+    padding-top: 192px;
+    margin-top: 30px;
+    min-height: 604px;
+    background: url("../img/sale/salebg.jpg") center center no-repeat;
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+    &__text {
+        max-width: 308px;
+        margin-top: 50px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &__button {
+        margin-top: 50px; 
+        width: 170px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}

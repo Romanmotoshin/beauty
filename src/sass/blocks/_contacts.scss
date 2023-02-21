@@ -1,0 +1,15 @@
+.contacts {
+    min-height: 120px;
+    &__info {
+        min-height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social-icon {
+        margin-right: 20px;
+    }
+    &__adress {
+        margin-left: 60px;
+    }
+}
