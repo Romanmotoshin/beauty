@@ -1,4 +1,4 @@
-const { src, dest, watch, parallel }  = require('gulp');
+const { src, dest, watch, parallel, series }  = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
@@ -7,6 +7,7 @@ const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
 const uglify = require('gulp-uglify');
+const del = require('del');
 
 function server() {
 
@@ -16,6 +17,10 @@ function server() {
         }
     });
 };
+
+function clean() {
+    return del(['dist/**']);
+}
 
 function styles() {
     return src("src/sass/**/*.+(scss|sass)")
@@ -69,5 +74,7 @@ function images() {
         .pipe(browserSync.stream());
 };
 
+
+exports.build = series(clean, parallel(html, styles, scripts, fonts, icons, images))
 
 exports.default = parallel(server, styles, scripts, fonts, icons, html, images, watchAll)
